@@ -1,0 +1,116 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Контейнер для всей визитки */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Описание */
+p.description {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Контактная информация */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #2980b9;
+  margin: 8px 0;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.contacts a:hover {
+  color: #3498db;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+  
+  .container {
+      padding: 20px;
+      margin: 20px auto;
+  }
+  
+  h1 {
+      font-size: 2em;
+  }
+  
+  p.description {
+      font-size: 1em;
+  }
+  
+  .contacts a {
+      font-size: 1em;
+      margin: 6px 0;
+  }
+
+}
+ /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+
+}
+.profile-photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 170px;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.beautiful-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #4CAF50; /* Зеленый цвет */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+     top: 70%;
+     left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Эффект при наведении */
+  .beautiful-button:hover {
+    background-color: #45a049; /* Более темный зеленый */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
